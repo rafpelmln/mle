@@ -1,0 +1,107 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to top, #8E1616, #F5C45E);
+    color: #EEEEEE;
+}
+
+/* Container utama */
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 5vw;
+    height: 10vh;
+}
+
+
+nav h1 {
+    font-size: clamp(1.2em, 2vw, 1.7rem);
+    color: #EEEEEE;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+}
+
+/* Section isi */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5vh;
+    flex: 1;
+    padding: 5vh 2vw;
+}
+
+section h1 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    text-align: center;
+}
+
+/* Gambar mobil */
+.car img {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Tombol switch mobil */
+.btn {
+    display: flex;
+    gap: 1.2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn button {
+    width: clamp(30px, 8vw, 50px);
+    height: clamp(30px, 8vw, 50px);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btn #mle3 {
+    background-color: #8f8f8f;
+}
+.btn #mle8 {
+    background-color: #c2ab47;
+}
+.btn #mle9 {
+    background-color: #bb2626;
+}
+
+.btn button:hover {
+    transform: scale(1.1);
+}
