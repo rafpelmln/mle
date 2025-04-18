@@ -180,3 +180,8 @@ button img {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
 }
+
+.spek h2,
+.fitur h2 {
+    padding-left: 0;
+}

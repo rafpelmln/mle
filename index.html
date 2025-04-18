@@ -36,13 +36,13 @@
 
         <div id="about" class="about">
             <div class="jelasan">
-                <h1>Mitsubishi Lancer Evo III (Evo 3)</h1>
-                <p>Mitsubishi Lancer Evolution III, atau sering disebut Evo 3, adalah generasi ketiga dari jajaran mobil sport legendaris Mitsubishi Lancer Evolution. Diluncurkan pada tahun 1995, mobil ini dikembangkan khusus untuk memenuhi regulasi World Rally Championship (WRC), sehingga performanya benar-benar dibuat serius di jalan maupun lintasan balap.</p>
+                <h1 id="nama-desk">Mitsubishi Lancer Evo III (Evo 3)</h1>
+                <p id="desk">Mitsubishi Lancer Evolution III, atau sering disebut Evo 3, adalah generasi ketiga dari jajaran mobil sport legendaris Mitsubishi Lancer Evolution. Diluncurkan pada tahun 1995, mobil ini dikembangkan khusus untuk memenuhi regulasi World Rally Championship (WRC), sehingga performanya benar-benar dibuat serius di jalan maupun lintasan balap.</p>
             </div>
             <div class="deskripsi">
                 <div class="spek">
                     <h2>🔧| Spesifikasi</h2>
-                    <ul>
+                    <ul id="spek-list">
                         <li>Mesin: 2.0L turbocharged DOHC inline-4 (4G63T)</li>
                         <li>Tenaga: Sekitar 270 PS (266 hp)</li>
                         <li>Torsi: Sekitar 309 Nm</li>
@@ -52,8 +52,8 @@
                     </ul>
                 </div>
                 <div class="fitur">
-                    <h2>🧩| Fitur Khas Evo 3</h2>
-                    <ul>
+                    <h2>🧩| Fitur Khas</h2>
+                    <ul id="fitur-list">
                         <li>Desain Aerodinamis Baru: Evo 3 punya bumper depan lebih besar, side skirt, dan spoiler belakang yang lebih tinggi dibanding Evo 2, buat meningkatkan downforce dan pendinginan.</li>
                         <li>Intercooler lebih besar & peningkatan sistem turbo untuk efisiensi performa.</li>
                         <li>Limited-slip differential (LSD) untuk traksi maksimal di segala medan.</li>
@@ -64,28 +64,6 @@
         </div>
     </div>
 
-    <script>
-        function gantiMobil(gambar, nama) {
-            document.getElementById('mobil').src=gambar;
-            document.getElementById('mle').innerHTML=nama;
-        }
-
-        document.getElementById("mle3").onclick = () => gantiMobil("mle3.png", "Mitsubishi Lancer Evo III")
-        document.getElementById("mle8").onclick = () => gantiMobil("mle8.png", "Mitsubishi Lancer Evo VIII")
-        document.getElementById("mle9").onclick = () => gantiMobil("mle9.png", "Mitsubishi Lancer Evo IX")
-
-        // document.getElementById("mle3").onclick= function () {
-        //     document.getElementById("mobil").src="mle3.png"
-        //     document.getElementById("mle").innerHTML = "Mitsubishi Lancer Evo III";
-        // }
-        // document.getElementById("mle8").onclick= function () {
-        //     document.getElementById("mobil").src="mle8.png"
-        //     document.getElementById("mle").innerHTML = "Mitsubishi Lancer Evo VIII";
-        // }
-        // document.getElementById("mle9").onclick= function () {
-        //     document.getElementById("mobil").src="mle9.png"
-        //     document.getElementById("mle").innerHTML = "Mitsubishi Lancer Evo IX";
-        // }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
